@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/fondo_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@drawable/fondo_piscina"
+    android:contentDescription="@null"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ImageView
+    android:id="@+id/header_titulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/titulo_piscina"
+    android:elevation="20dp"
+    android:contentDescription="@null"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/panel_login"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/capsula_cristal"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_nadador"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="PAIDESPORT ID"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:autofillHints="username"
+            android:background="#66FFFFFF"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#E0E0E0" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints="password"
+            android:background="#66FFFFFF"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#E0E0E0" />
+
+        <Button
+            android:id="@+id/btn_acceder"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#FFC107"
+            android:text="ACCEDER"
+            android:textColor="#003366"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+    <ImageView
+    android:id="@+id/marco_inferior"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="fitEnd"
+    android:src="@drawable/marco_2"
+    android:elevation="20dp"
+    android:contentDescription="@null"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<ImageView
+    android:id="@+id/nadador_izq"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="fitStart"
+    android:src="@drawable/nadador_1"
+    android:elevation="50dp"
+    android:translationZ="50dp"
+    app:layout_constraintWidth_percent="1.00"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginLeft="-5dp"
+    android:contentDescription="@null" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
